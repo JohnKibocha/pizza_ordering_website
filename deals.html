@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pzza</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Pzza is a pizza delivery service." name="description">
+    <meta content="pizza, delivery, food, fast food, italian, pizzeria" name="keywords">
+    <meta content="Sahil" name="author">
+    <link href="style.css" rel="stylesheet">
+    <link href="images/favicon.svg" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img alt="Pzza" id="logo_image" src="images/logo.svg">
+                <span class="brand-name">Pzza!</span>
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-links">
+            <input id="checkbox_toggle" type="checkbox"/>
+            <label class="material-icons" for="checkbox_toggle" id="hamburger">menu</label>
+
+            <!-- Navigation Items -->
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="deals.html">Deals</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="cart.html">Cart</a>
+                <a class="material-icons" href="index.html">account_circle</a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="deals-section">
+        <!-- Deals Heading -->
+        <h2 class="deals-heading">Exclusive Deals</h2>
+
+        <!-- Deals Cards Container -->
+        <div class="deals-container">
+            <div class="deals-card">
+                <img alt="Family Combo Special" src="images/family_combo.jpg">
+                <h3>Family Combo Special</h3>
+                <p>30% OFF on Family Combos</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="deals-card">
+                <img alt="Thursday Special" src="images/thursday_special.jpg">
+                <h3>Thursday Special</h3>
+                <p>12% OFF on all orders</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="deals-card">
+                <img alt="Buy 1 Get 1 Free" src="images/buy1get1.jpg">
+                <h3>Buy 1 Get 1 Free</h3>
+                <p>On selected pizzas</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="deals-card">
+                <img alt="Weekend Special" src="images/weekend_special.jpg">
+                <h3>Weekend Special</h3>
+                <p>20% OFF on all orders</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="deals-card">
+                <img alt="Student Discount" src="images/student_discount.jpg">
+                <h3>Student Discount</h3>
+                <p>15% OFF with student ID</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="deals-card">
+                <img alt="Lunch Special" src="images/lunch_special.jpg">
+                <h3>Lunch Special</h3>
+                <p>10% OFF on orders between 12 PM - 2 PM</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-brand">Pzza!</div>
+    <div class="footer-social">
+        <a href="#"><img alt="Facebook" src="images/facebook.svg" style="color: #fff;"></a>
+        <a href="#"><img alt="x" src="images/twitter.svg"></a>
+        <a href="#"><img alt="Instagram" src="images/instagram.svg"></a>
+        <a href="#"><img alt="Whatsapp" src="images/whatsapp.svg"></a>
+    </div>
+    <div class="footer-copyright">
+        &copy; Sahil 2024 &bull; All Rights Reserved
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

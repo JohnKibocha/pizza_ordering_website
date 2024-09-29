@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pzza - Checkout</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Pzza is a pizza delivery service." name="description">
+    <meta content="pizza, delivery, food, fast food, italian, pizzeria" name="keywords">
+    <meta content="Sahil" name="author">
+    <link href="style.css" rel="stylesheet">
+    <link href="images/favicon.svg" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img alt="Pzza" id="logo_image" src="images/logo.svg">
+                <span class="brand-name">Pzza!</span>
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <input id="checkbox_toggle" type="checkbox"/>
+            <label class="material-icons" for="checkbox_toggle" id="hamburger">menu</label>
+
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="deals.html">Deals</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="cart.html">Cart</a>
+                <a class="material-icons" href="index.html">account_circle</a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="checkout-section">
+        <div class="checkout-container">
+            <div class="checkout-left">
+                <label for="pizza-quantity">Number of Pizzas:</label>
+                <select id="pizza-quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <p>Pizza Size: Large</p>
+                    <p>Pizza Type: BBQ Chicken</p>
+                    <p>Crust Type: Stuffed</p>
+                    <p>Toppings: Mushrooms</p>
+                </div>
+
+                <div class="cost-calculator">
+                    <div class="cost-row">
+                        <span>BBQ Pizza</span>
+                        <span>$12.99</span>
+                    </div>
+                    <div class="cost-row">
+                        <span>TS Discount</span>
+                        <span>$-1.56 (12.0%)</span>
+                    </div>
+                    <div class="cost-row">
+                        <span>FC Discount</span>
+                        <span>$-3.90 (30.0%)</span>
+                    </div>
+                    <div class="cost-row">
+                        <span>Tax</span>
+                        <span>$0.40</span>
+                    </div>
+                    <div class="cost-row">
+                        <span>Delivery</span>
+                        <span>$8.25</span>
+                    </div>
+                    <div class="cost-row total">
+                        <span>Total Unit Cost</span>
+                        <span>$16.18</span>
+                    </div>
+                    <div class="cost-row total">
+                        <span>Total x 3</span>
+                        <span>$48.54</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-divider"></div>
+
+            <div class="checkout-right">
+                <div class="delivery-options">
+                    <label>
+                        <input type="radio" name="delivery-option" value="delivery" checked> Delivery ($8.25)
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery-option" value="pickup"> Pickup
+                    </label>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="address-section">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" value="Sarah Williams">
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" value="sarah@email.com">
+
+                    <label for="phone">Phone:</label>
+                    <div class="phone-input" id="phone">
+                        <input type="text" id="phone-country" value="+1">
+                        <input type="text" id="phone-number" value="212-456-7890">
+                    </div>
+
+                    <label for="country">Country:</label>
+                    <select id="country">
+                        <option value="us" selected>United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                    </select>
+
+                    <div class="address-input">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" value="Albany">
+
+                        <label for="state">State:</label>
+                        <input type="text" id="state" value="NY">
+
+                        <label for="zip">Zip:</label>
+                        <input type="text" id="zip" value="12207">
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <label for="card-number">Credit/Debit No:</label>
+                    <input type="text" id="card-number" value="2671 9860 8300 0202">
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" value="123">
+
+                    <label for="exp">Exp:</label>
+                    <input type="text" id="exp" value="06/26">
+                </div>
+
+                <button class="pay-now-btn" onclick="createOrder()">Pay Now</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-brand">Pzza!</div>
+    <div class="footer-social">
+        <a href="#"><img alt="Facebook" src="images/facebook.svg" style="color: #fff;"></a>
+        <a href="#"><img alt="x" src="images/twitter.svg"></a>
+        <a href="#"><img alt="Instagram" src="images/instagram.svg"></a>
+        <a href="#"><img alt="Whatsapp" src="images/whatsapp.svg"></a>
+    </div>
+    <div class="footer-copyright">
+        &copy; Sahil 2024 &bull; All Rights Reserved
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

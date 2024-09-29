@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pzza</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Pzza is a pizza delivery service." name="description">
+    <meta content="pizza, delivery, food, fast food, italian, pizzeria" name="keywords">
+    <meta content="Sahil" name="author">
+    <link href="style.css" rel="stylesheet">
+    <link href="images/favicon.svg" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img alt="Pzza" id="logo_image" src="images/logo.svg">
+                <span class="brand-name">Pzza!</span>
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-links">
+            <input id="checkbox_toggle" type="checkbox"/>
+            <label class="material-icons" for="checkbox_toggle" id="hamburger">menu</label>
+
+            <!-- Navigation Items -->
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="deals.html">Deals</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="cart.html">Cart</a>
+                <a class="material-icons" href="index.html">account_circle</a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="menu-section">
+        <!-- Menu Heading -->
+        <h2 class="menu-heading">Our Delicious Pizzas</h2>
+
+        <!-- Menu Cards Container -->
+        <div class="menu-container">
+            <div class="menu-card">
+                <img alt="BBQ Chicken Pizza" src="images/bbq_chicken.jpg">
+                <h3>BBQ Chicken Pizza</h3>
+                <p>$12.99</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="menu-card">
+                <img alt="Pepperoni Pizza" src="images/pepperoni.jpg">
+                <h3>Pepperoni Pizza</h3>
+                <p>$10.99</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="menu-card">
+                <img alt="Meat Deluxe Pizza" src="images/meat_deluxe.jpg">
+                <h3>Meat Deluxe Pizza</h3>
+                <p>$14.99</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="menu-card">
+                <img alt="Veggie Pizza" src="images/veggie.jpg">
+                <h3>Veggie Pizza</h3>
+                <p>$11.99</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="menu-card">
+                <img alt="Hawaiian Pizza" src="images/hawaiian.jpg">
+                <h3>Hawaiian Pizza</h3>
+                <p>$13.99</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="menu-card">
+                <img alt="Margherita Pizza" src="images/margherita.jpg">
+                <h3>Margherita Pizza</h3>
+                <p>$9.99</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="menu-card">
+                <img alt="Buffalo Chicken Pizza" src="images/buffalo_chicken.jpg">
+                <h3>Buffalo Chicken Pizza</h3>
+                <p>$13.99</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="menu-card">
+                <img alt="Supreme Pizza" src="images/supreme.jpg">
+                <h3>Supreme Pizza</h3>
+                <p>$15.99</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+            <div class="menu-card">
+                <img alt="Four Cheese Pizza" src="images/four_cheese.jpg">
+                <h3>Four Cheese Pizza</h3>
+                <p>$12.99</p>
+                <button class="order-btn" onclick="location.href='cart.html'">Order Now</button>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+<footer>
+    <div class="footer-brand">Pzza!</div>
+    <div class="footer-social">
+        <a href="#"><img alt="Facebook" src="images/facebook.svg" style="color: #fff;"></a>
+        <a href="#"><img alt="x" src="images/twitter.svg"></a>
+        <a href="#"><img alt="Instagram" src="images/instagram.svg"></a>
+        <a href="#"><img alt="Whatsapp" src="images/whatsapp.svg"></a>
+    </div>
+    <div class="footer-copyright">
+        &copy; Sahil 2024 &bull; All Rights Reserved
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pzza - Cart</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Pzza is a pizza delivery service." name="description">
+    <meta content="pizza, delivery, food, fast food, italian, pizzeria" name="keywords">
+    <meta content="Sahil" name="author">
+    <link href="style.css" rel="stylesheet">
+    <link href="images/favicon.svg" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img alt="Pzza" id="logo_image" src="images/logo.svg">
+                <span class="brand-name">Pzza!</span>
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <input id="checkbox_toggle" type="checkbox"/>
+            <label class="material-icons" for="checkbox_toggle" id="hamburger">menu</label>
+
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="deals.html">Deals</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="cart.html">Cart</a>
+                <a class="material-icons" href="index.html">account_circle</a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="cart-section">
+        <div class="cart-container">
+            <div class="cart-left">
+                <button class="reorder-btn">Reorder from Favorites</button>
+
+                <div class="dropdowns">
+                    <label for="pizza-size">Pizza Size:</label>
+                    <select id="pizza-size">
+                        <option value="large" selected>Large</option>
+                        <option value="medium">Medium</option>
+                        <option value="small">Small</option>
+                    </select>
+
+                    <label for="pizza-type">Pizza Type:</label>
+                    <select id="pizza-type">
+                        <option value="bbq_chicken" selected>BBQ Chicken</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="meat_deluxe">Meat Deluxe</option>
+                        <option value="veggie">Veggie</option>
+                        <option value="hawaiian">Hawaiian</option>
+                        <option value="margherita">Margherita</option>
+                        <option value="buffalo_chicken">Buffalo Chicken</option>
+                        <option value="supreme">Supreme</option>
+                        <option value="four_cheese">Four Cheese</option>
+                    </select>
+
+                    <label for="crust-type">Crust Type:</label>
+                    <select id="crust-type">
+                        <option value="stuffed" selected>Stuffed</option>
+                        <option value="thin">Thin</option>
+                        <option value="gluten_free">Gluten-Free</option>
+                        <option value="regular">Regular</option>
+                    </select>
+                </div>
+
+                <div class="toppings">
+                    <label>Toppings:</label>
+                    <div>
+                        <input type="radio" id="pepperoni" name="topping" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mushroom" name="topping" value="mushroom" checked>
+                        <label for="mushroom">Mushroom</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="olive" name="topping" value="olive">
+                        <label for="olive">Olive</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-divider"></div>
+
+            <div class="cart-right">
+                <img id="pizza-preview" src="images/bbq_chicken.jpg" alt="Pizza Preview">
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cost-calculator">
+                <div class="cost-row">
+                    <span>Cost</span>
+                    <span>$12.99</span>
+                </div>
+                <div class="cost-row">
+                    <span>Discount (TS)</span>
+                    <span>$1.56 (12.0%)</span>
+                </div>
+                <div class="cost-row">
+                    <span>Tax</span>
+                    <span>$0.40</span>
+                </div>
+                <div class="cost-row total">
+                    <span>Total</span>
+                    <span>$11.83</span>
+                </div>
+            </div>
+            <button class="checkout-btn" onclick="location.href='checkout.html'">
+                <i class="material-icons">shopping_cart</i> Checkout
+            </button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-brand">Pzza!</div>
+    <div class="footer-social">
+        <a href="#"><img alt="Facebook" src="images/facebook.svg" style="color: #fff;"></a>
+        <a href="#"><img alt="x" src="images/twitter.svg"></a>
+        <a href="#"><img alt="Instagram" src="images/instagram.svg"></a>
+        <a href="#"><img alt="Whatsapp" src="images/whatsapp.svg"></a>
+    </div>
+    <div class="footer-copyright">
+        &copy; Sahil 2024 &bull; All Rights Reserved
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
